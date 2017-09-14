@@ -22,7 +22,7 @@ public class Reader implements UserDetails{
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
-        return Arrays.asList(new SimpleGrantedAuthority("READER"));
+        return Arrays.asList(new SimpleGrantedAuthority("W"));
     }
 
     @Override
@@ -49,17 +49,17 @@ public class Reader implements UserDetails{
 
     @Override
     public boolean isAccountNonExpired() {
-        return true;
+        return false;
     }
 
     @Override
     public boolean isAccountNonLocked() {
-        return true;
+        return false;
     }
 
     @Override
     public boolean isCredentialsNonExpired() {
-        return true;
+        return false;
     }
 
     @Override
